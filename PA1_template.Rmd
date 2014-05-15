@@ -38,6 +38,7 @@ interval.max <- data.casting[data.casting$steps == max(data.casting$steps), ]$in
 The interval `r interval.max` contains the maximum number of steps, which is about `r max(data.casting$steps)`
 
 ## Imputing missing values
+The strategy dealing with missing values is to fill in all of the missing values with the mean for that 5-minute interval
 ```{r cache = TRUE}
 counts.missing <- sum(is.na(data)) # calculate the total number of missing values
 index.missing <- which(is.na(data))

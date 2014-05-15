@@ -57,6 +57,7 @@ interval.max <- data.casting[data.casting$steps == max(data.casting$steps),
 The interval 835 contains the maximum number of steps, which is about 206.1698
 
 ## Imputing missing values
+The strategy dealing with missing values is to fill in all of the missing values with the mean for that 5-minute interval
 
 ```r
 counts.missing <- sum(is.na(data))  # calculate the total number of missing values

@@ -232,6 +232,8 @@ interval.max &lt;- data.casting[data.casting$steps == max(data.casting$steps),
 
 <h2>Imputing missing values</h2>
 
+<p>The strategy dealing with missing values is to fill in all of the missing values with the mean for that 5-minute interval</p>
+
 <pre><code class="r">counts.missing &lt;- sum(is.na(data))  # calculate the total number of missing values
 index.missing &lt;- which(is.na(data))
 # Create a new data set and fill in all of the missing values with the mean
